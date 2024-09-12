@@ -1,0 +1,28 @@
+/*----------------------- Testimonial Start ----------------------*/
+.testi-sec5  {  
+    position: relative; 
+    .slick-dots {
+        margin: 60px 0px 0px;
+    }
+}
+.testi-card {
+    &.style3 {
+        background: #F4F4F4;
+
+        .testi-card {
+            &_wrapper {
+                justify-content: flex-start; 
+                gap: 10px;
+            }
+
+            &_text {
+                border-bottom: none;
+                padding-bottom: 0px;
+                margin-bottom: 30px;
+            }
+        }
+
+    }
+}
+
+/*----------------------- Testimonial End ----------------------*/

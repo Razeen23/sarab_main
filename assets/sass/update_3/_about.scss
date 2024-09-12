@@ -1,0 +1,67 @@
+/*----------------------- About Start ----------------------*/
+.achieve-about {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    max-width: 435px;
+
+    &_icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: rgba(16, 55, 182, 0.2);
+        line-height: 56px;
+        text-align: center;
+
+        i {
+            color: $theme-color-2;
+            font-size: 22px;
+            line-height: 22px;
+        }
+    }
+
+    &_title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    &_text {
+        border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+        padding-bottom: 40px;
+        margin-bottom: 30px;
+
+
+    }
+
+    &:last-child {
+        .achieve-about {
+            &_text {
+                border-bottom: 1px solid transparent;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.img-box6 {
+    position: relative;
+
+    @include lg {
+        margin-top: 40px;  
+    }
+
+    .img2 {
+        position: absolute;
+        right: -35%;
+        bottom: 10px;
+
+        @media(max-width: 1399px) {
+            display: none;
+        }
+    }
+}
+
+/*----------------------- About end ----------------------*/

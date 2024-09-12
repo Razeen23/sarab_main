@@ -1,0 +1,179 @@
+/*----------------------- Header Start ----------------------*/
+.header-layout8 {
+    position: relative;
+
+
+    .header-top {
+        background-color: $title-color;
+    }
+
+    .header-right {
+        margin: 0;
+    }
+
+    .sticky-wrapper {
+        position: relative;
+
+        &.sticky {}
+    }
+
+    .header-logo {
+        @include md {
+            margin: 0;
+        }
+    }
+
+    .menu-area {
+        background-color: $theme-color-2;
+        position: relative;
+        background-size: auto;
+        background-repeat: repeat;
+        z-index: 2;
+
+        &:before,
+        &:after {
+            content: "";
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background-color: $theme-color;
+            z-index: -1;
+        }
+
+        &:before {
+            width: 25%;
+            left: 0;
+            clip-path: polygon(0 0, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+
+            @media(min-width: 2299px) {
+                width: 28%; 
+            }
+
+            @media(max-width: 1699px) {
+                width: 20%;
+            }
+
+            @media(max-width: 1399px) {
+                width: 24%;
+            }
+
+            @include lg {
+                width: 28%;
+            }
+
+            @include md {
+                width: 35%;
+            }
+
+            @include sm {
+                width: 50%;
+            }
+
+            @include vxs { 
+                width: 60%; 
+            }
+        }
+
+        &:after {
+            width: 22%;
+            right: 0;
+            clip-path: polygon(20px 0, 100% 0%, 100% 100%, 0% 100%);
+
+            @media(min-width: 2099px) {
+                width: 28%;
+            }
+
+            @media(max-width: 1899px) {
+                width: 20%;
+            }
+
+            @media(max-width: 1699px) {
+                width: 17%;
+            }
+
+            @include xxl {
+                width: 18%;
+            }
+
+            @include lg {
+                display: none;
+            }
+        }
+    }
+
+    .header-logo {
+        padding: 0;
+    }
+
+    .header-button {
+        .icon-btn {
+            position: relative;
+            color: $white-color;
+            font-size: 22px;
+
+            &:hover {
+                background-color: transparent;
+            }
+
+            @include xs {
+                display: none;
+            }
+
+            &:first-child {
+                border-right: 1px solid $white-color;
+                padding-right: 27px;
+                max-height: 30px;
+                line-height: 25px;
+            }
+
+            i {
+                color: $white-color;
+                border: none;
+                padding: 0;
+
+            }
+
+        }
+
+        .themeholy-btn {
+            margin-left: 30px;
+
+            @include xxl {
+                display: none;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .main-menu>ul>li>a {
+        color: $white-color;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+
+    .main-menu ul li.menu-item-has-children>a {
+        &:after {
+            color: $white-color;
+        }
+
+        &:hover {
+            &:after {
+                color: $theme-color;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .header-layout8 {
+        .th-container {
+            --main-container: 1620px;
+        }
+    }
+}
+
+
+/*----------------------- Header End ----------------------*/

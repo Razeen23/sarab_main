@@ -1,0 +1,80 @@
+.cta-area {
+    position: relative;
+    padding: 50px 60px;
+    z-index: 10;
+    @include sm{
+        padding: 30px;
+    }
+}
+.cta-content{
+    @include md{
+        text-align: center;  
+    }
+}
+
+.cta-title {
+    margin: 0;
+    max-width: 509px;
+    color: $white-color;
+    @include lg{
+        max-width: 509px;
+        display: block;
+        margin: 0 auto;  
+        text-align: center;  
+    }
+}
+
+.btn-group {
+    &.cta-btn {
+        justify-content: flex-end;
+        @include lg{
+            justify-content: center; 
+            margin-top: 20px;
+        }
+    }
+}
+
+@include md {
+    .sec-title.cta-title {
+     
+
+        img {
+            max-width: 64px;
+        }
+    }
+}
+
+@include sm {
+    .sec-title.cta-title {
+       
+
+        img {
+            display: none;
+        }
+    }
+}
+
+@include xs {
+    .sec-title.cta-title { 
+       
+    }
+}
+
+.cta-sec {
+    position: relative;
+    min-height: 243px;
+    padding: 80px 0 80px 0; 
+    background-attachment: fixed; 
+    overflow: hidden;
+    z-index: 9; 
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+}

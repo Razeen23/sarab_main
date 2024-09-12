@@ -1,0 +1,50 @@
+/*----------------------- Blog ----------------------*/
+.blog-card {
+    &.style4 {
+        .blog-card {
+            &_wrapper {
+                left: auto;
+                right: 20px;
+            }
+        }
+
+        .blog-meta {
+            position: relative;
+            margin-top: -70px;
+            margin-bottom: 22px;
+            background-color: $theme-color;
+            padding: 15px 22px;
+            z-index: 9;
+
+            span,
+            a {
+                color: $white-color;
+                transition: all 0.4s ease-in-out;
+
+                &:after {
+                    background-color: $white-color;
+                }
+
+                i {
+                    color: $white-color;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                    margin-right: 0;
+                }
+            }
+
+            img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;  
+                margin-right: 7px;
+            }
+        }
+
+        .line-btn {
+            text-transform: capitalize;
+        }
+    }
+}

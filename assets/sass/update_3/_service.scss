@@ -1,0 +1,115 @@
+/*----------------------- Service Start ----------------------*/
+.service-item {
+    &.style2 {
+        position: relative;
+        text-align: left;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            .service-item {
+                &_content {
+                    transform: translateY(0px);
+                    opacity: 0;
+                    visibility: visible;
+                }
+
+                &_info {
+                    bottom: 40px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        .service-item {
+
+            &_content {
+                position: absolute;
+                left: 40px;
+                right: 20px;
+                bottom: 40px;
+                padding: 0;
+                transition: all 0.4s ease-in-out; 
+
+                @include xl {
+                    left: 20px;
+                }
+            }
+
+            &_info {
+                position: absolute;
+                left: 40px;
+                right: 20px;
+                bottom: -40px;
+                padding: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s ease-in-out;
+            }
+
+
+            &_text {
+                color: #CDCDCD;
+                max-width: 270px;
+                transition: all 0.4s ease-in-out;
+            }
+
+            &_number {
+                font-family: $body-font;
+                font-size: 100px;
+                font-weight: 800;
+                line-height: 28px;
+                color: rgba(255, 255, 255, 0.2);
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+                transition: all 0.4s ease-in-out;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+
+        }
+
+        .service-icon {
+            position: relative;
+            color: $theme-color;
+            width: 80px;
+            height: 80px;
+            line-height: 60px;
+            border-radius: 50%;
+            background-color: $white-color;
+            padding: 10px;
+            margin: 0;
+            margin-bottom: 25px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .box-title {
+            color: $white-color;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .line-btn {
+            color: $theme-color;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+
+            &:before {
+                background-color: var(--theme-color);
+            }
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .service-sec5 {
+        .th-container {
+            --main-container: 1490px;
+        }
+    }
+}
+
+/*----------------------- Service End ----------------------*/

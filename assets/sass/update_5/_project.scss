@@ -1,0 +1,77 @@
+/*----------------------- project Start ----------------------*/
+.project-sec2 {
+    padding: 0 25px;
+}
+
+.project-row {
+    --bs-gutter-y: 1.9rem;
+}
+
+.project-card-2 {
+    &.style2 {
+        .project-img {
+            img {
+                width: 100%;  
+            }
+        }
+
+        .project-content {
+            background-color: #F4F4F4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            gap: 30px;
+            left: 0;
+            bottom: -15px;
+        }
+
+        .project-subtitle {
+            color: #363739;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 2px;
+        }
+
+        .box-title {
+            color: $theme-color;
+            transition: 0.4s;
+            margin-bottom: 0;
+
+            a {
+                color: inherit;
+            }
+
+            &:hover {
+                color: $theme-color;
+            }
+
+        }
+
+
+        .icon-btn {
+            --btn-size: 50px;
+            border-radius: 0;
+            background: $theme-color-2;
+            color: var(--white-color);
+            line-height: 53px;
+            border-radius: 50%;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                background: $theme-color;
+            }
+        }
+
+        &:hover {
+            .project-content {
+                bottom: 0px;
+                opacity: 1;
+            }
+        }
+    }
+
+
+}
+
+/*----------------------- project End ----------------------*/

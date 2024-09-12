@@ -1,0 +1,154 @@
+/*----------------------- About Start ----------------------*/
+.img-box8 {
+    position: relative;
+
+    .img1 {
+        border-radius: 50px;
+        margin-left: 150px;
+
+        @media(max-width: 1399px) {
+            margin-left: 100px;
+        }
+
+        @include xl {
+            margin-left: 50px;
+        }
+
+        @media(max-width: 480px) {
+            margin-left: 0;
+        }
+
+        img {
+            border-radius: 50px;
+            margin-top: 77px;
+        }
+    }
+
+    .img2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50px;
+
+        @include lg {
+            right: 40%;
+        }
+
+        @include md {
+            right: 20%;
+        }
+
+        @include sm {
+            right: 0%;
+        }
+
+        @media(max-width: 480px) {
+            display: none;
+        }
+
+        img {
+            border-radius: 50px;
+        }
+    }
+
+    .img3 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+
+        @include lg {
+            right: 40%;
+        }
+
+        @include md {
+            right: 20%;
+        }
+
+        @include sm {
+            right: 0%;
+        }
+
+    }
+
+    .about-counter {
+        position: absolute;
+        top: 20%;
+        left: 0;
+
+        @media(max-width: 480px) {
+            right: 0;
+            left: unset;
+        }
+
+        .counter-item {
+            min-width: 230px;
+            background-color: $theme-color-2;
+            padding: 20px 25px;
+            text-align: center;
+            margin-bottom: 30px;
+
+            // @include sm {
+            //     min-width: 100%;
+            // }
+
+            &_number {
+                color: $white-color;
+                margin-bottom: 0;
+            }
+
+            &_text {
+                color: $white-color;
+                font-size: 18px;
+                font-family: $title-font;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.achieve-about-wrapper {
+    &.style3 {
+        position: relative;
+        z-index: 3;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 26px;
+            top: 50px;
+            border: 1px dashed $theme-color; 
+            width: 1px; 
+            height: 228px;
+            z-index: -1;  
+
+            @media(max-width: 480px) { 
+                height: 70%; 
+            }
+        }
+
+        .achieve-about {
+            min-width: 560px;
+            margin-bottom: 20px;
+
+            @include sm {
+                min-width: 100%;
+            }
+
+            .achieve-icon {
+                i {
+                    width: 56px;
+                    height: 56px;
+                    line-height: 56px;
+                    border-radius: 50%;
+                    background-color: $theme-color;
+                    color: $white-color;
+                    text-align: center;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------- About end ----------------------*/

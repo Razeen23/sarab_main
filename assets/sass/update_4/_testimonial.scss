@@ -1,0 +1,97 @@
+/*----------------------- Testimonial Start ----------------------*/
+.testi-box-slide {
+    &.style2 {
+        position: relative;
+        max-width: 628px;
+        display: block;
+        margin-left: auto;
+
+        @include md {
+            margin-right: auto;
+            padding: 80px 0;
+        }
+
+        .testi-box {
+            background-color: $white-color;
+            padding: 30px;
+
+            &_wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            &_profile {
+                @include vxs {
+                    display: block;
+                }
+            }
+
+            &_name {
+                margin-bottom: 3px;
+            }
+
+            &_text {
+                font-style: italic;
+            }
+        }
+
+        .icon-box {
+            position: absolute;
+            bottom: auto;
+            right: 10px;
+            top: 32%;
+
+            @include lg {
+                top: 28%;
+            }
+
+            @include md {
+                top: 37%;
+            }
+
+            @include sm {
+                top: 35%;
+            }
+
+            @include xs {  
+                top: 30%;
+            }
+        }
+    }
+
+    .testi-title-area {
+        max-width: 550px;
+    }
+
+    .testi-star {
+        font-size: 12px;
+        color: $theme-color;
+    }
+
+}
+
+.video-box4 {
+    position: relative;
+    margin: 0 50px 0 -50%;
+    min-height: 756px;
+
+    @include md {
+        margin: 0;
+        min-height: 100%;
+
+    }
+
+    .white-play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        text-align: center;
+    }
+}
+
+
+/*----------------------- Testimonial End ----------------------*/

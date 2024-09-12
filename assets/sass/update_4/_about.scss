@@ -1,0 +1,76 @@
+/*----------------------- About Start ----------------------*/
+.img-box7 {
+    position: relative;
+    z-index: 3;
+
+    @include lg {
+        margin-bottom: 50px;
+    }
+
+    @include md {
+        margin-bottom: 70px;
+    }
+     @include vxs {
+        margin-bottom: 40px; 
+    }
+
+
+    .img2 {
+        position: absolute; 
+        right: 0;
+        bottom: -10%;
+
+        @include vxs {
+            display: none;
+        }
+    }
+
+    .img3 {
+        position: absolute;
+        bottom: -18%;
+        left: 0;
+        z-index: -1;
+
+        @include lg {
+            bottom: -7%;
+        }
+    }
+
+    .about-counter {
+        &.style3 {
+            background-color: $theme-color;
+            min-width: 190px;
+            padding: 30px;
+            position: absolute;  
+            right: -3px;
+            top: 10%;
+
+            @include vxs {  
+                top: auto;
+                right: 0;
+                bottom: 0;   
+            }
+
+            .counter-card {
+                &_text {
+                    font-family: $body-font;
+                    max-width: 114px;
+                }
+            }
+        }
+    }
+}
+
+.achieve-about {
+    &-wrapper {
+        &.style2 {
+            .achieve-icon {
+                color: $theme-color-2;
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+/*----------------------- About end ----------------------*/

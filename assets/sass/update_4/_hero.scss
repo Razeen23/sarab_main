@@ -1,0 +1,207 @@
+/*----------------------- Hero Start ----------------------*/
+
+.hero-7 {
+    .themeholy-hero-slide {
+        position: relative;
+        z-index: 3;
+        overflow: hidden;
+
+        &:before {
+            background: linear-gradient(90deg, #121212 -1.07%, rgba(18, 18, 18, 0.40) 115.73%);
+            z-index: 1;
+        }
+    }
+
+    .themeholy-hero-img {
+        position: relative;
+        z-index: 9;
+        margin-right: -50px;
+        text-align: right;
+        padding-bottom: 100px;
+
+        @include xs {
+            margin-right: 0;
+        }
+    }
+}
+
+
+
+.hero-style7 {
+    position: relative;
+    z-index: 6;
+    padding: 201px 0 173px 0;
+
+    @include lg {
+        padding: 150px 0 150px 0;
+    }
+
+    @include md {
+        text-align: center;
+        padding: 120px 0 120px 0;
+    }
+
+    @include sm {
+        padding: 90px 0 90px 0;
+    }
+
+    .btn-group {
+        @include md {
+            justify-content: center;
+        }
+    }
+
+    .hero-text {
+        font-size: 16px;
+        margin-bottom: 50px;
+
+    }
+
+    .hero-title {
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 90px;
+        text-transform: capitalize;
+
+        @media(max-width: 1399px) {
+            font-size: 70px;
+            line-height: 90px;
+        }
+
+        @include lg {
+            font-size: 60px;
+            line-height: 70px;
+        }
+
+        @include md {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        @include sm {
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+        @include vxs {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.hero-video-image {
+    position: absolute;
+    bottom: 40px;
+    left: -40px;
+
+    @include md {
+        left: 50px;
+        bottom: 130px;
+    }
+
+    @include xs {
+        left: 0;
+        bottom: 80px;
+        position: relative;
+        text-align: center;
+    }
+
+    .hero-video-icon {
+        position: absolute;
+        top: 38%;
+        left: 38%;
+
+        @include xs {
+            left: 40%;
+        }
+
+        .play-btn {
+
+            &:after,
+            &:before {
+                background-color: var(--theme-color);
+            }
+
+            >i {
+                display: inline-block;
+                width: var(--icon-size, 60px);
+                height: var(--icon-size, 60px);
+                line-height: var(--icon-size, 60px);
+                text-align: center;
+                background-color: var(--theme-color);
+
+
+            }
+
+            &:hover {
+
+                &:after,
+                &:before {
+                    background-color: var(--theme-color-2);
+
+                    i {
+                        background-color: var(--theme-color-2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero-indicator-area {
+
+    &.style2 {
+        left: 10%;
+        right: auto;
+        width: 120px;
+
+        @media(max-width: 1799px) {
+            left: 0;
+        }
+
+        @include xxl {
+            display: none !important;
+        }
+
+        .hero-indicator5 {
+            .indicatior-btn {
+                min-width: 56px;
+                max-height: 56px;
+
+                img {
+                    width: 56px;
+                    height: 52px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    transition: all 0.4s ease-in-out;
+                }
+
+                &:hover {
+                    border-color: $theme-color;
+                }
+
+                &.active {
+                    border-color: $theme-color;
+
+                    img {
+                        border-radius: 50%;
+                        transform: none;
+                    }
+                }
+            }
+
+            .indicator {
+                position: absolute;  
+            }
+        }
+    }
+
+
+}
+
+/*----------------------- Hero End ----------------------*/

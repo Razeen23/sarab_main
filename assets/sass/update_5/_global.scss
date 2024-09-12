@@ -1,0 +1,229 @@
+/*----------------------- project Start ----------------------*/
+.request-form {
+    &.style2 {
+        margin-right: 30px;
+        @include lg {
+            margin: 30px 0 0 0;  
+        }
+    }
+}
+
+.info-media {
+    &_icon {
+        img {
+            background-color: $smoke-color;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            padding: 20px;
+        }
+    }
+}
+
+
+/*----------------------- project End ----------------------*/
+.video-title-area {
+    @include lg {
+        padding: 80px 0;
+    }
+}
+
+.video-box5 {
+    position: relative;
+    margin: 0 -60% 0 0px;
+    z-index: 3;
+    min-height: 570px;
+
+    @include xxl {
+        margin: 0 -30% 0 0px;
+    }
+
+    @media(max-width: 1399px) {
+        margin: 0 -10% 0 0px;
+    }
+
+    @include lg {
+        min-height: 100%;
+        margin: 0;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.80);
+    }
+
+    @include md {
+        margin: 0;
+
+    }
+
+    .white-play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.call-btn {
+    &.style2 {
+        justify-content: center;
+        gap: 10px;
+
+        .video-icon {
+            min-width: 60px;
+            min-height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: $theme-color-2;
+            border-radius: 50%;
+
+            i {
+                font-size: 20px;
+                line-height: 20px;
+                color: $white-color;
+            }
+        }
+
+        .header-info_link {
+            color: $theme-color-2;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 700;
+            margin-bottom: 0;
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+}
+
+
+/*----------------------- counter Area Start ----------------------*/
+.counter-area3 {
+    padding: 80px 0;
+
+    .container {
+        @include xl {
+            max-width: 100%;
+        }
+    }
+}
+
+.counter-sec-wrapper {
+    &.style2 {
+        @include lg {
+            padding: 0; 
+        }
+
+        .counter-card {
+            &.style2 {
+                border-right: none;
+
+                @include xxl {
+                    margin-right: 20px;
+                    padding-right: 20px;
+                }
+
+                @include xl {
+                    margin-right: 10px;
+                    padding-right: 10px;
+                }
+
+                @include lg {
+                    border: none;
+                }
+
+                .counter-card {
+                    &_icon {
+                        width: 100px;
+                        height: 100px;
+                        line-height: 100px;
+                        text-align: center;
+                        border-radius: 5px;
+                        background-color: $theme-color-2;
+                        margin-bottom: 0px;
+
+                        @include xl {
+                            width: 80px;
+                            height: 80px;
+                            line-height: 80px;
+                        }
+
+                        @include lg {
+                            display: block;
+                            margin: auto auto 30px auto;
+                        }
+                    }
+
+                    &_text {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .counter-area3 {
+        .th-container {
+            --main-container: 1480px;
+        }
+
+
+    }
+}
+
+.newsletter-area {
+    &.style3 {
+        background-color: #E6E6E6;
+        padding: 0 40px 0 0;
+
+        @include md {
+            padding: 30px;
+        }
+
+        .newsletter-title-area {
+            @include sm {
+                display: block;
+            }
+        }
+
+        .newsletter-form.style3 .form-control {
+            min-width: 450px;
+        }
+
+        .newsletter-title {
+            color: $body-color;
+        }
+
+        .video-box6 {
+            position: relative;
+            max-width: 270px;
+            height: 138px;
+
+            @include sm {
+                display: block;
+                margin: auto auto 20px auto;
+            }
+
+            .white-play-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                transform: translate(-50%, -50%);
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}

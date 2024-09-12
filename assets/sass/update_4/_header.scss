@@ -1,0 +1,210 @@
+/*----------------------- Header Start ----------------------*/
+.header-layout7 {
+    .header-top {
+        background-color: $title-color;
+        z-index: auto;
+    }
+
+    .header-links {
+        margin-left: 170px;
+
+        @media(max-width: 1799px) {
+            margin-left: 220px;
+        }
+
+        @media(max-width: 1599px) {
+            margin-left: 210px;
+        }
+
+        @media(max-width: 1399px) {
+            margin-left: 280px;
+        }
+
+        @media(max-width: 1299px) {
+            margin-left: 250px;
+        }
+
+        @include lg {
+            margin-left: 290px;
+        }
+
+        @include md {
+            margin-left: 0;
+        }
+    }
+
+    .sticky-wrapper.sticky {
+        .header-logo {
+            @include md {
+                height: 86px;
+                padding-top: 15px;
+            }
+
+            @include sm {
+                padding-top: 25px; 
+            }
+        }
+
+        .menu-area {
+            @media(min-width: 1922px) {
+                &:after {
+                    width: 30%;
+                }
+            }
+
+            @include md {
+                padding: 0;
+            }
+        }
+
+    }
+
+    .header-button {
+        .themeholy-btn {
+            // @media(max-width: 1599px) { 
+            //     display: none;
+            // }
+        }
+    }
+
+    .header-logo {
+        padding-bottom: 0;
+
+        @include md {
+            margin: 0;
+        }
+    }
+
+    .main-menu {
+        padding-left: 100px;
+
+        @media(max-width: 1699px) {
+            padding-left: 150px;
+        }
+
+        @media(max-width: 1599px) {
+            padding-left: 40px;
+            margin-left: 0;
+        }
+
+        @include lg {
+            padding-left: 0;
+        }
+
+    }
+
+    .menu-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 81%;
+        clip-path: polygon(76px 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .menu-area {
+        position: relative;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 0;
+            background-color: $theme-color;
+
+        }
+
+        &:before {
+            width: 23%;
+            height: 130px;
+            clip-path: path("M108.663 126.531C96.1668 121.602 83.7236 115 70.2905 115H1.00001C0.44772 115 0 114.552 0 114V16C0 15.4477 0.447715 15 1 15H70.2904C83.7235 15 96.1668 8.39798 108.663 3.46942C114.341 1.23014 120.527 0 127 0H313C319.473 0 325.659 1.23015 331.337 3.46942C343.833 8.39799 356.276 15 369.71 15H424C424.552 15 425 15.4477 425 16V114C425 114.552 424.552 115 424 115H369.71C356.276 115 343.833 121.602 331.337 126.531C325.659 128.77 319.473 130 313 130H127C120.527 130 114.341 128.77 108.663 126.531Z");
+            z-index: -1;
+
+            @media(min-width: 2399px) {
+                left: 10%;
+            }
+
+            @media(max-width: 1599px) {
+                width: 18%;
+                height: 100px;
+            }
+
+            @media(max-width: 1399px) {
+                width: 22%;
+            }
+
+            @include lg {
+                width: 27%;
+            }
+
+            @include md {
+                display: none;
+            }
+
+        }
+
+        &:after {
+            width: 23%;
+            height: 100px;
+            top: 0;
+            z-index: -2;
+
+            @media(max-width: 1922px) {
+                width: 20%;
+            }
+
+            @media(max-width: 1599px) {
+                width: 18%;
+            }
+
+            @media(max-width: 1399px) {
+                width: 22%;
+            }
+
+            @include lg {
+                width: 27%;
+            }
+
+            @include md {
+                width: 33%;
+                height: 86px;
+            }
+
+            @include sm {
+                width: 50%;
+            }
+
+            @include vxs {
+                width: 60%;
+            }
+
+        }
+    }
+
+    .logo-bg {
+        position: absolute;
+        top: -15px;
+        left: 0;
+        width: 25%;
+        background-color: $theme-color;
+
+        &:before,
+        &:after {
+            clip-path: none;
+            display: none;
+        }
+
+    }
+
+    .logo-shape {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        z-index: 1;
+    }
+}
+
+
+
+/*----------------------- Header End ----------------------*/

@@ -1,0 +1,74 @@
+.testi-card {
+    &.style4 {
+        position: relative;
+        padding: 30px 30px 50px 30px;
+        border-radius: 20px;
+        background: transparent;
+        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.04));
+
+        @include xl {
+            padding: 20px 20px 50px 20px;
+        }
+
+        @include md {
+            padding: 30px 30px 50px 30px;
+        }
+       
+
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            mask-image: url("../img/update_5/testimonial/testi_shape_1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: 100% 100%;
+            background-color: $white-color;
+            z-index: -1;
+        }
+
+        .testi-card {
+            &_img {
+                min-width: 56px;
+
+                img {
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 5px;
+                }
+            }
+
+            &_name {
+                margin-bottom: 0px;
+            }
+
+            &_text {
+                padding-bottom: 0;
+                border: none;
+                @include vxs {
+                    margin-bottom: 40px; 
+                }
+            }
+
+            &_wrapper {
+                @include vxs {
+                    display: block; 
+                }
+            }
+        }
+
+        .testi-quote {
+            position: absolute;
+            right: 30px;
+            bottom: 60px;
+            @include xl {
+                bottom: 40px;  
+            }
+            @include vxs {
+                bottom: 50px;  
+            }
+        }
+    }
+}

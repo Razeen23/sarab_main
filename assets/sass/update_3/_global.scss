@@ -1,0 +1,545 @@
+/*----------------------- counter Start ----------------------*/
+.counter-sec-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+
+    @include lg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+
+    @media(max-width: 460px) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+}
+
+.counter-card {
+    &.style3 {
+        border-right: 1px dashed rgba(111, 110, 119, 0.5);
+        padding-right: 120px;
+
+        @include lg {
+            border-right: 1px dashed $body-color;
+            border-bottom: 1px dashed $body-color;
+            padding: 50px;
+            margin-right: 0;
+            text-align: center;
+
+            &:nth-child(2) {
+                border-right: 1px dashed transparent;
+                margin-right: 0;
+            }
+
+            &:nth-child(3) {
+                border-bottom: 1px dashed transparent;
+            }
+
+            &:last-child {
+                border-bottom: 1px dashed transparent;
+            }
+        }
+
+        @include md {
+            padding: 25px;
+        }
+
+
+        @media(max-width: 460px) {
+            border: none;
+            padding: 20px 0;
+
+        }
+
+        &:last-child {
+            border-right: 1px dashed transparent;
+            padding-right: 0;
+        }
+
+        .counter-card {
+            &_icon {
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                border-radius: 5px;
+                background-color: $theme-color;
+                margin-bottom: 30px;
+            }
+
+            &_text {
+                color: #CDCDCD;
+                font-weight: 500;
+            }
+        }
+
+    }
+
+
+}
+
+
+
+
+/*----------------------- counter End ----------------------*/
+
+/*--------------------------- video Start ---------------------------*/
+.video-area2 {
+    position: relative;
+}
+
+.request-form-area {
+    background-color: $white-color;
+    padding: 60px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.08);
+
+    @include lg {
+        padding: 30px;
+    }
+}
+
+.video-play-btn {
+    top: 50%;
+    right: 30%;
+    left: auto;
+    width: 120px;
+    height: 120px;
+    line-height: 122px;
+    font-size: 35px;
+    background: rgba(255, 255, 255, 0.6);
+    transition: all 0.4s ease-in-out;
+
+    @include xl {
+        right: 14%;
+    }
+
+    @include md {
+        display: none;
+    }
+
+    &:hover {
+        background: $theme-color-2;
+
+        &:before,
+        &:after {
+            border: 1px solid $theme-color-2;
+        }
+    }
+
+    &:before,
+    &:after {
+        border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    i {
+        color: $theme-color-2;
+        transition: all 0.4s ease-in-out;
+    }
+}
+
+/*------------------------portfolio area start --------------------------*/
+.portfolio-sec6 {
+    .title-area .sec-title {
+        @include xl {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+
+    .icon-box {
+        @include lg {
+            display: block;
+            text-align: center;
+            margin: auto auto 40px auto;
+        }
+
+        .slick-arrow {
+            width: var(--icon-size, 60px);
+            height: var(--icon-size, 60px);
+            line-height: var(--icon-size, 60px);
+            font-size: var(--icon-font-size, 16px);
+            margin-top: calc(var(--icon-size, 60px) / -2);
+        }
+    }
+}
+
+.project-slide6 {
+    position: relative;
+    overflow: hidden;
+    margin-right: -45%;
+    margin-left: 4%;
+
+    @media(max-width: 1899px) {
+        margin-right: -14%;
+    }
+
+    @include lg {
+        margin: 0;
+    }
+
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    --space: 60px;
+
+    .project-img {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .project-content {
+        background-color: $theme-color;
+        padding: 60px 30px;
+        width: 270px;
+        position: absolute;
+        left: var(--space);
+        bottom: auto;
+        bottom: -60px;
+        text-align: center;
+        border-radius: 50%;
+        height: 270px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+
+        .project-subtitle {
+            color: $white-color;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-bottom: 0px;
+        }
+
+        .project-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 40px;
+            color: $white-color;
+            margin-bottom: 20px;
+            transition: all 0.4s;
+
+            &:hover {
+                color: $theme-color-2;
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+
+        .project-btn {
+            background-color: $theme-color-2;
+            width: var(--icon-size, 50px);
+            height: var(--icon-size, 50px);
+            line-height: var(--icon-size, 50px);
+            font-size: var(--icon-font-size, 18px);
+            margin-top: calc(var(--icon-size, 50px) / -2);
+            text-align: center;
+            color: $white-color;
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                background-color: $title-color;
+            }
+        }
+
+
+    }
+
+    &:hover {
+        .project-content {
+            bottom: 60px;
+            visibility: visible;
+            opacity: 1;
+
+        }
+
+
+    }
+}
+
+/*----------------------- work Area Start ----------------------*/
+.work-sec {
+    @include xl {
+        .container {
+            max-width: 100%;
+        }
+    }
+}
+
+.work-area {
+    max-width: 488px;
+
+    @include md {
+        max-width: 340px;
+    }
+
+    @include sm {
+        max-width: 100%;
+        // display: block;
+        // text-align: center;
+
+        .btn-group {
+            // justify-content: center; 
+            margin-bottom: 30px;
+        }
+    }
+
+    &-wrapper {
+        background-color: #F4F4F4;
+        padding: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        @include sm {
+            display: block;
+        }
+
+
+        @include xl {
+            padding: 40px;
+        }
+
+        @include sm {
+            padding: 30px;
+        }
+
+        .title-area {
+            .sec-title {
+                @include xl {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        .work-video-image {
+            position: relative;
+            display: inline-block;
+
+            @include xs {
+                display: block;
+            }
+
+            &.style2 {
+                .work-video-icon {
+                    .video-play-btn {
+                        top: 14%;
+                        left: 10%;
+                        right: auto;
+                        width: 80px;
+                        height: 80px;
+                        line-height: 82px;
+                        font-size: 22px;
+                        background: var(--theme-color); 
+                        border-radius: 0px;
+                        transition: all 0.4s ease-in-out;
+
+                        &:before,
+                        &:after {
+                            display: none;
+                        }
+                        i {
+                            color: $white-color; 
+                        }
+                    }
+                }
+            }
+
+            .video-icon {
+                .video-play-btn {
+                    top: 14%;
+                    left: 10%;
+                    right: auto;
+                    width: 80px;
+                    height: 80px;
+                    line-height: 82px;
+                    font-size: 22px;
+                    background: $theme-color;
+                    border-radius: 0px;
+                    transition: all 0.4s ease-in-out;
+
+                    @include lg {
+                        width: 50px;
+                        height: 50px;
+                        line-height: 52px;
+                        font-size: 18px;
+                    }
+
+                    &:before,
+                    &:after {
+                        display: none;
+                    }
+
+                    i {
+                        color: $white-color;
+                    }
+
+                    @include md {
+                        display: block;
+                    }
+                }
+            }
+
+            img {
+                min-width: 240px;
+                height: 240px;
+                border-radius: 50%;
+
+                @include lg {
+                    min-width: 180px;
+                    height: 180px;
+                }
+
+                @include md {
+                    min-width: 140px;
+                    height: 140px;
+                }
+            }
+        }
+    }
+}
+
+.work-image {
+    position: relative;
+    display: inline-block;
+    margin-right: 40px;
+
+    @include xs {
+        display: block;
+    }
+
+
+    .work-number {
+        position: relative;
+        font-family: $body-font;
+        font-size: 220px;
+        line-height: 220px;
+        font-weight: 700;
+        max-height: 160px;
+        display: inline-block;
+        margin: 0;
+        text-transform: uppercase;
+
+        @include lg {
+            font-size: 150px;
+            line-height: 150px;
+        }
+
+        @include vxs {
+            font-size: 100px;
+            line-height: 100px;
+        }
+    }
+
+    .work-plus {
+        font-size: 100px;
+        margin-left: -40px;
+
+        @include lg {
+            font-size: 60px;
+            margin-left: -20px;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 23px;
+        left: 2%;
+        width: 100%;
+        mix-blend-mode: lighten;
+    }
+}
+
+/*----------------------- work Area End ----------------------*/
+
+/*----------------------- newsletter Area Start ----------------------*/
+.newsletter-area {
+    &.style2 {
+        padding: 20px 50px;
+        border-radius: 10px;
+
+        @include md {
+            padding: 30px;
+        }
+    }
+}
+
+.newsletter-form {
+    &.style5 {
+        text-align: right;
+
+        .form-control {
+            background-color: $white-color;
+            border-radius: 30px;
+            min-width: 520px;
+            max-width: 520px;
+            min-height: 60px;
+            margin-left: auto;
+
+            @include lg {
+                min-width: 100%;
+            }
+        }
+
+        .themeholy-btn {
+            border-radius: 0px 30px 30px 0px;
+            padding: 16px 30px;
+            max-width: 164px;
+            text-transform: capitalize;
+            position: absolute;
+            top: 1px;
+            right: 0;
+
+            @include xs {
+                position: relative;
+                display: block;
+                text-align: center;
+                margin: auto;
+                border-radius: 30px;
+                margin-top: 20px;
+            }
+
+            &:hover {
+                background-color: var(--title-color);
+
+                .icon i {
+                    top: -5px;
+                    right: -20px;
+                }
+            }
+        }
+    }
+}
+
+.newsletter-title-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    @include md {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    @include xs {
+        img {
+            display: none;
+        }
+    }
+}
+
+/*----------------------- newsletter Area End ----------------------*/

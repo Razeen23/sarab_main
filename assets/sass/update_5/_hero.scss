@@ -1,0 +1,229 @@
+/*----------------------- Hero Start ----------------------*/
+.hero-8 {
+    position: relative;
+    background-color: $smoke-color;
+    background-size: auto;
+    background-position: top center;
+    overflow: hidden;
+
+    .themeholy-hero-slide {
+        position: relative;
+        z-index: 9;
+
+        &:before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90.14deg, #000000 0.1%, rgba(16, 55, 182, 0.08) 85.55%);
+            z-index: -1;  
+        }
+    }
+
+    .hero-shape {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 4;
+    }
+
+    ul.slick-dots {
+        display: none;
+
+        li {
+            display: none;
+
+            &.slick-active {
+                display: none;
+            }
+        }
+    }
+}
+
+.hero-style8 {
+    position: relative;
+    z-index: 6;
+    padding: 190px 0;
+    max-width: 880px;
+
+    .hero-subtitle {
+        color: $theme-color;
+    }
+
+    .hero-title {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 90px;
+        text-transform: capitalize;
+
+        @include lg {
+            font-size: 70px;
+            line-height: 80px;
+        }
+
+        @include md {
+            font-size: 60px;
+            line-height: 70px;
+        }
+
+        @include sm {
+            font-size: 55px;
+            line-height: 65px;  
+        }
+    }
+
+    .hero-text {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 38px;
+        max-width: 610px;
+    }
+
+    .call-btn {
+        justify-content: center;
+        gap: 10px;
+
+        .hero-icon {
+            min-width: 60px;
+            min-height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: $theme-color-2;
+            border-radius: 50%;
+
+        }
+
+        .header-info_link {
+            color: $white-color;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 0;
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .hero-1 {
+        .hero-shape {
+            display: none;
+        }
+    }
+
+    .hero-style8 {
+        padding: 170px 0;
+    }
+}
+
+@include xl {
+
+    .hero-style8 {
+        padding: 140px 0;
+    }
+}
+
+
+@include md {
+
+
+    .hero-subtitle {
+        margin-bottom: 10px;
+
+        img {
+            max-width: 170px;
+        }
+    }
+
+    .hero-style8 {
+        padding: 150px 0;
+    }
+}
+
+@include sm {
+
+    .hero-style8 {
+        padding: 100px 0 100px 0;
+    }
+
+    .hero-style8,
+    .hero-style3 {
+        .hero-text {
+            max-width: 420px;
+        }
+    }
+}
+
+@include xs {
+    .hero-style8 {
+        .hero-title {
+            font-size: 44px;
+            line-height: 1.2;
+        }
+
+        .hero-text {
+            margin-bottom: 28px;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .hero-style8 {
+        .hero-title {
+            font-size: 36px;
+            line-height: 1.3;
+        }
+    }
+}
+
+.hero-anime-img {
+    position: absolute;
+
+    @include xs { 
+        display: none;
+    }
+
+    &.img-1 {
+        left: 2%;
+        top: 15%;
+        animation: movingX 7s linear infinite;
+    }
+
+    &.img-2 {
+        right: 10%;
+        top: 30%;
+        animation: movingX 14s linear infinite;
+    }
+
+    &.img-3 {
+        left: 40%;
+        bottom: 5%;
+        border-radius: 30px 30px 0 0;
+        animation: spin 7s linear infinite;
+    }
+
+    &.img-4 {
+        left: 50%;
+        top: 15%;
+        animation: movingX 7s linear infinite;
+    }
+
+    &.img-5 {
+        right: 0%;
+        top: 10%;
+        animation: jumpAni 7s linear infinite;
+    }
+
+    &.img-6 {
+        left: 0%;
+        bottom: 0%;
+        animation: jumpAni 7s linear infinite;
+    }
+}
+
+/*----------------------- Hero End ----------------------*/

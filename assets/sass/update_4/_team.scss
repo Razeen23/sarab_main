@@ -1,0 +1,127 @@
+.team-box2 {
+    position: relative;
+    background-color: $white-color;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.4s ease-in-out;
+    z-index: 2;
+
+    .team-img {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(16, 55, 182, 0.80);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4 ease-in-out;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .box-title {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: -0.3rem;
+        margin-bottom: 0;
+    }
+
+    &_content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white-color;
+        padding: 30px;
+        z-index: 3;
+    }
+
+
+
+    .team-social {
+        position: absolute;
+        bottom: 80px;
+        right: 20px;
+        z-index: 2;
+        transition: all 0.4s ease-in-out;
+
+        .icon-btn {
+            --btn-size: 46px;
+            border-color: $theme-color-2;
+            background-color: $theme-color-2;
+            border-radius: 50%;
+            font-size: var(--btn-font-size, 18px);
+            color: $white-color;
+        }
+
+        .themeholy-social {
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            bottom: 45px;
+            left: 0px;
+            width: 46px;
+            min-height: 149px;
+            padding: 0;
+            color: var(--title-color);
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: 0.4s ease-in-out;
+            z-index: 2;
+
+            a {
+                border-radius: 50%;
+                margin-right: 0;
+                margin-bottom: 10px;
+                filter: drop-shadow(0px 0px 10px rgba(174, 174, 174, 0.50));
+            }
+        }
+    }
+
+    .team-content {
+        .share-btn {
+            height: 100%;
+            background-color: $theme-color-2;
+            color: $white-color;
+            width: 46px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 80px;
+            cursor: pointer;
+        }
+    }
+
+    &:hover {
+        .team-img {
+
+            &:before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .icon-btn {
+            transform: rotate(45deg);
+        }
+
+        .themeholy-social {
+            transform: scaleY(1);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.team-title-area {
+    max-width: 520px;
+    display: block;
+    margin: auto;
+}
