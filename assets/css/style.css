@@ -15171,7 +15171,7 @@ span.select2-selection.select2-selection--single:focus {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 20px;
-  padding: 30px;
+  padding: 10px;
   border-top: 2px solid var(--theme-color);
   /* Medium Large devices */
 }
@@ -15204,7 +15204,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .achive-about-content .achive-about-wrapper .achive-about_text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 28px;
   color: var(--body-color);
   margin-bottom: 0;
