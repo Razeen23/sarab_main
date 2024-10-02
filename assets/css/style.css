@@ -119,7 +119,7 @@ Version: 1.0.0
   --title-color: #252525;
   --body-color: #757474;
   --smoke-color3: #E1EBEE;
-  --smoke-color: #7f8197;
+  --smoke-color: #4d6f86ad;
 
   --smoke-color2: #fdeedf;
   --black-color: #000000;
@@ -2229,7 +2229,7 @@ textarea.is-invalid {
   font-family: var(--title-font);
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-top: -0.34em;
+  padding-top: 20px;
 }
 
 .sub-title:has(img) {
@@ -2305,6 +2305,7 @@ hr.title-line {
 /* Large devices */
 @media (max-width: 1199px) {
   .sub-title {
+    padding-top: 20px;
     margin-bottom: 20px;
   }
   .shadow-title {
@@ -2314,6 +2315,7 @@ hr.title-line {
   .title-area,
   .sec-title {
     --section-title-space: 60px;
+    
   }
   .title-area.mb-45,
   .sec-title.mb-45 {
