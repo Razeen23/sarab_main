@@ -1013,7 +1013,7 @@ textarea.is-invalid {
   display: inline-block;
 }
 
-.slick-dots {
+/* .slick-dots {
   list-style-type: none;
   padding: 0;
   margin: 40px 0 0px 0;
@@ -1022,10 +1022,10 @@ textarea.is-invalid {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-}
+} */
 
 .slick-dots li {
-  display: inline-block;
+  display: none;
   margin-right: 20px;
 }
 
@@ -1033,7 +1033,7 @@ textarea.is-invalid {
   margin-right: 0;
 }
 
-.slick-dots button {
+/* .slick-dots button {
   font-size: 0;
   padding: 0;
   background-color: transparent;
@@ -1046,9 +1046,9 @@ textarea.is-invalid {
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
   position: relative;
-}
+} */
 
-.slick-dots button:hover {
+/* .slick-dots button:hover {
   border-color: var(--theme-color);
 }
 
@@ -1066,16 +1066,16 @@ textarea.is-invalid {
   transition: all ease 0.4s;
   opacity: 0;
   visibility: hidden;
-}
+} */
 
-.slick-dots .slick-active button {
+/* .slick-dots .slick-active button {
   background-color: var(--theme-color);
 }
 
 .slick-dots .slick-active button::before {
   opacity: 1;
   visibility: visible;
-}
+} */
 
 .slick-arrow {
   display: inline-block;
@@ -1156,6 +1156,7 @@ textarea.is-invalid {
     margin-left: 40px;
   }
   .slick-dots {
+    display:none;
     margin: 40px 0 0 0;
   }
   .icon-box .slick-arrow {
@@ -8980,9 +8981,27 @@ blockquote.has-text-align-right,
 
 .breadcumb-wrapper {
   /* background: rgba(18, 18, 18, 0.8); */
+  position: relative; /* Make sure the ::before is positioned relative to this element */
   background-color: var(--title-color);
   padding: 110px 0 0 0;
   text-align: center;
+}
+
+.breadcumb-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.8); /* Black filter */
+  z-index: 1; /* Ensure this overlay is above the background */
+  pointer-events: none; /* Allow interaction with content underneath */
+}
+
+.breadcumb-wrapper * {
+  position: relative;
+  z-index: 2; /* Ensure all content is above the overlay */
 }
 
 /* Large devices */
