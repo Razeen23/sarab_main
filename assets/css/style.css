@@ -2193,7 +2193,7 @@ textarea.is-invalid {
 }
 
 .scroll-top .progress-circle path {
-  stroke: var(--theme-color);
+  stroke: var(--theme-color-2);
   stroke-width: 20px;
   box-sizing: border-box;
   -webkit-transition: all 400ms linear;
