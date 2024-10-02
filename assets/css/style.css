@@ -8979,6 +8979,7 @@ blockquote.has-text-align-right,
 }
 
 .breadcumb-wrapper {
+  /* background: rgba(18, 18, 18, 0.8); */
   background-color: var(--title-color);
   padding: 110px 0 0 0;
   text-align: center;
@@ -25260,7 +25261,7 @@ hr.style1 {
 }
 
 .testi-item_text {
-  color: var(--smoke-color2);
+  color: var(--white-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
