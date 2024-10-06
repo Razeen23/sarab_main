@@ -1,0 +1,45 @@
+
+Email Details :
+shippingsarab@gmail.com
+Sarabshipping1#
+
+
+SAVE YOUR BACKUP CODES
+Keep these backup codes somewhere safe but accessible.
+
+1. 2810 3356		 6. 7338 3450
+2. 1562 7343		 7. 9902 6783
+3. 5338 2070		 8. 9779 6718
+4. 3746 0803		 9. 6152 7861
+5. 1663 9161		10. 3415 0147
+
+(shippingsarab@gmail.com)
+
+* You can only use each backup code once.
+* Need more? Visit https://g.co/2sv
+* These codes were generated on: Oct 6, 2024.
+
+
+If you change the password of the email you have to follow this steps also :
+
+
+
+/* 
+ 1.Once 2FA is enabled, go back to your Google Account page.
+	2.	Go to Security again.
+	3.	Under “Signing in to Google”, find and click App passwords. You may need to verify your account login again.
+	4.	In the Select App dropdown, choose Mail (or select Other if you prefer a custom name for the app).
+	5.	In the Select Device dropdown, choose Other (or pick from the provided options), and give it a name like “PHPMailer”.
+	6.	Click Generate.
+Google will give you a 16-character app-specific password. Copy this password—you won’t be able to view it again once you close the window.
+
+2. step two Use the App-Specific Password in PHPMailer
+
+Once you have the app-specific password, use it in place of your Gmail password in your PHPMailer configuration.
+ */
+
+
+Change the new password in the mail.php file 
+Over here(mail->Password = 'new passcode here';)
+
+
